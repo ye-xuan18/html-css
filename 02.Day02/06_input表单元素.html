@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+    <!-- 
+    表单元素分类
+
+    一、input输入表单元素(type）
+    1、button：定义点击按钮（通过JavaScript启动脚本）
+    2、checkbox：定义复选框
+    3、file：定义输入字段和“浏览”按钮，供文件上传
+    4、hidden：定义隐藏的输入字段
+    5、image：定义图像形式的提交按钮
+    6、password：定义密码字段，隐藏密码
+    7、radio：定义单选按钮
+    8、reset：定义重置按钮，重置按钮会清除表单中的所有数据
+    9、submit：定义提交按钮，提交按钮会把表单数据发送到服务器
+    10、text：定义单行的输入字段，用户可在其中输入文本，默认宽度为20px
+    -->
+</head>
+<body>
+    <form action="xxx.php" method="get">
+        <!--text 文本框 用户可以在里面输入任何文字-->
+        <!--maxlength规定输入字符的最大长度-->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6">  <br>
+        <!--password 密码框 用户看不见输入的密码-->
+        密码:<input type="password" name="password"> <br>
+        <!-- radio是单选按钮，可以实现多选一 -->
+        <!-- name是表单元素的名字，单选和按复选钮必须有相同的名字name，才可以实现多选1 -->
+        <!-- 单选按钮和复选按钮可以设置checked属性，当页面打开时就可以默认选中这个按钮 -->
+        性别：男<input type="radio" name="sex" value="男" checked="checked"> 女 <input type="radio" name="sex" value="女"> 人妖 <input type="radio" name="sex" value="人妖"> <br>
+        <!-- checkbox是一个复选框，可以实现多选效果 -->
+        爱好：编程<input type="checkbox" name="hobby" checked="checked"> 刷剧 <input type="checkbox" name="hobby"> 睡觉 <input type="checkbox" name="hobby"> <br>
+        <!-- submit定义提交按钮，提交按钮会把表单数据发送到服务器 -->
+        <input type="submit" value="免费注册">
+        <!-- reset定义重置按钮，重置按钮会清除表单中的所有数据 -->
+        <input type="reset" value="重新填写">
+        <!-- 普通按钮button 后期结合JavaScript搭配使用 -->
+        <input type="button" value="获取短信验证码"><br>
+        <!-- file定义输入字段和“浏览”按钮，供文件上传 -->
+        上传头像：<input type="file">
+    </form>
+</body>
+</html>

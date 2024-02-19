@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级</title>
+    <!-- 排序：!important>style>id选择器>类选择器/伪类选择器>元素选择器>继承或者* -->
+    <style>
+        .test {
+            color: red;
+        }
+        div {
+            color: aqua !important;
+        }
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="test" id="demo" style="color: red;">你笑起来真好看</div>
+</body>
+</html>
